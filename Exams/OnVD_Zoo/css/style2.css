@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+body {
+    background: url("../images/bg-body.gif");
+}
+
+#page {
+    background: url("../images/bg-page.gif") no-repeat;
+    width: 960px;
+    margin: auto;
+}
+
+.jumbotron {
+    background: url("../images/lion-family.jpg") no-repeat;
+    width: 597px;
+    height: 357px;
+    margin-top: -324px;
+    margin-left: 346px;
+}
+
+#navigation {
+    display: flex;
+    float: right;
+    justify-content: space-between;
+    gap: 28px;
+    margin: -350px 30px 0 0;
+}
+
+#navigation li a {
+    text-decoration: none;
+    color: white;
+}
+
+#header a:nth-of-type(2) {
+    margin-left: 90px;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#header div:last-of-type {
+    margin-top: 20px;
+    margin-left: 20px;
+    display: grid;
+    grid-auto-flow: column;
+    margin-bottom: 30px;
+}
+
+#header div:last-of-type h1 {
+    color: #dfc185;
+}
+
+#header div:last-of-type p {
+    margin-top: 12px;
+    margin-left: -300px;
+    color: white;
+}
+
+#header div:last-of-type p a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#page #header ul:first-of-type {
+    display: grid;
+    grid-template-areas: "li lo le";
+    gap: 27px;
+    width: 330px;
+    padding: 10px 20px;
+    list-style: none;
+    margin: 20px 28px;
+    border-top: 1px dashed lightgrey;
+    border-bottom: 1px dashed lightgrey;
+}
+
+#page #header ul:first-of-type li {
+    width: 100px;
+    color: darkred;
+    margin-left: -20px;
+}
+
+#header ul:first-of-type li:nth-of-type(n+2) {
+    border-left: 1px dashed lightgrey;
+    padding-left: 10px;
+}
+
+#header ul:first-of-type li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: darkred;
+}
+
+#page #header ul:first-of-type li:nth-of-type(1) {
+    grid-area: li;
+}
+
+#page #header ul:first-of-type li:nth-of-type(2) {
+    grid-area: lo;
+}
+
+#page #header ul:first-of-type li:nth-of-type(3) {
+    grid-area: le;
+}
+
+#header #navigation li:nth-of-type(1) {
+    background: url("../images/bg-page.gif") no-repeat;
+}
+
+#navigation li {
+    list-style: none;
+}
+
+#content {
+    margin: 0 10px 46px 26px;
+}
+
+#featured {
+    grid-area: ma;
+}
+
+#featured ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+#featured ul {
+    display: grid;
+    grid-auto-flow: column;
+    margin-top: 23px;
+}
+
+#featured li {
+    list-style: none;
+    padding-top: 105px;
+    text-align: center;
+}
+
+#featured ul li:nth-of-type(1) {
+    background: url("../images/penguin.jpg") no-repeat;
+    height: 98px;
+    width: 98px;
+}
+
+#featured ul li:nth-of-type(2) {
+    background: url("../images/elephant.jpg") no-repeat;
+    height: 98px;
+    width: 98px;
+}
+
+#featured ul li:nth-of-type(3) {
+    background: url("../images/owl.jpg") no-repeat;
+    height: 98px;
+    width: 98px;
+}
+
+#featured ul li:nth-of-type(4) {
+    background: url("../images/butterfly.jpg") no-repeat;
+    height: 98px;
+    width: 98px;
+}
+
+#featured ul li:nth-of-type(5) {
+    background: url("../images/turtle.jpg") no-repeat;
+    height: 98px;
+    width: 98px;
+}
+
+#featured ul li:nth-of-type(6) {
+    background: url("../images/snake.jpg") no-repeat;
+    height: 98px;
+    width: 98px;
+}
+
+#featured ul li:nth-of-type(7) {
+    background: url("../images/gorilla.jpg") no-repeat;
+    height: 98px;
+    width: 98px;
+}
+
+#featured ul li:nth-of-type(8) {
+    background: url("../images/button-view-gallery.jpg") no-repeat;
+    height: 98px;
+    width: 98px;
+}
+
+#content {
+    display: grid;
+    grid-template-areas:
+    "ma ma ma"
+    "l m r";
+    row-gap: 40px;
+    column-gap: 30px;
+}
+
+#content h1, #content h2 {
+    color: #ae0a25;
+}
+
+.section1 li {
+    list-style: none;
+}
+
+#section1 li, #section2 li {
+    list-style: none;
+}
+
+.section1 {
+    grid-area: l;
+    color: #875316;
+}
+
+.section2 {
+    grid-area: m;
+    display: grid;
+    grid-template-areas:
+            "h h"
+            "t t"
+            "li li"
+            "l r";
+}
+
+.section2 h2 {
+    grid-area: h;
+}
+
+.section2 p {
+    grid-area: t;
+}
+
+.section2 ul {
+    grid-area: li;
+}
+
+#section1 {
+    grid-area: l;
+}
+
+#section2 {
+    grid-area: r;
+}
+
+.section3 {
+    grid-area: r;
+}
+
+#article li {
+    padding: 20px 0;
+}
+
+#article li > a {
+    font-weight: bolder;
+}
+
+#article li:nth-child(n+2) {
+    border-top: 1px dashed #c29e63;
+}
+
+#article a {
+    text-decoration: none;
+    color: #ae0a25;
+}
+
+#article p a {
+    text-decoration: underline;
+    color: #875316;
+}
+
+.section1 h2 {
+    margin-bottom: -10px;
+}
+
+.section2 h2, .section3 h2 {
+    padding-bottom: 10px;
+}
+
+.section2 > p {
+    margin-bottom: 10px;
+}
+
+.section2 > ul {
+    background: url("../images/dolphins.jpg") no-repeat;
+    padding-left: 230px;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.section2 p {
+    float: right;
+}
+
+#footer {
+    background: url("../images/bg-footer.gif") repeat-x;
+    margin-right: -279px;
+    margin-left: -280px;
+}
+
+#footer > div:first-of-type {
+    background: url("../images/animal-kingdom.jpg") no-repeat;
+    margin-left: 270px;
+    padding-left: 220px;
+}
+
+#footer li {
+    list-style: none;
+}
+
+#footer > div {
+    display: grid;
+    grid-template-areas: "div ul ul2"
+                         "c c c";
+    height: 200px;
+}
+
+#footer div div {
+    grid-area: div;
+    padding-top: 50px;
+    width: 290px;
+}
+
+#footer .navigation {
+    grid-area: ul;
+    padding-top: 50px;
+    display: grid;
+    grid-template-areas: "1 2";
+    margin-left: -200px;
+    width: 150px;
+}
+
+#footer ul:nth-of-type(2) {
+    grid-area: ul2;
+    padding-top: 50px;
+}
+
+#footer ul:nth-of-type(2) li {
+    padding-bottom: 20px;
+    margin-left: -250px;
+}
+
+#footer p:last-of-type {
+    grid-area: c;
+
+}
+
+#footer a {
+    text-decoration: none;
+    color: black;
+}

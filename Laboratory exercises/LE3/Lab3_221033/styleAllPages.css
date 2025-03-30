@@ -1,0 +1,72 @@
+body {
+    width: 800px;
+    height: 600px;
+    position: absolute;
+}
+
+header {
+    background-image: url("navigation-background.jpg");
+    background-repeat: repeat-x;
+    height: 30px;
+    padding: 4px;
+    font-size: 18px;
+    color: #ffffff;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+nav {
+    margin-left: 120px;
+    justify-content: center;
+}
+
+nav > a {
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline;
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#navPic {
+    height: 120px;
+    position: absolute;
+    top: 5px;
+}
+
+section {
+    height: 420px;
+    display: inline-block;
+    width: 47%;
+}
+
+h1 {
+    color: #92CD00;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+}
+
+section > p, ol, dl {
+    color: #192402;
+    font-weight: bold;
+    text-align: justify;
+}
+
+#pic {
+    position: absolute;
+    width: 50%;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+
+footer {
+    height: 30px;
+    color: #ffffff;
+    background-color: #81b518;
+    text-align: center;
+    line-height: 30px;
+}

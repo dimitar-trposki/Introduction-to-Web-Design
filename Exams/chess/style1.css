@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1518px;
+}
+
+#topbar {
+    background: url("images/header.jpg");
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#topbar li a:hover {
+    color:grey;
+    text-decoration: underline;
+    border: 1px solid rgba(128, 128, 128, 0);
+    background-color: rgba(128, 128, 128, 0.11);
+    padding: 10px 15px;
+
+}
+
+#right_sidebar #Visit li a:hover {
+    color:orange;
+    border: 1px solid rgba(255, 165, 0, 0);
+    background-color: rgba(255, 165, 0, 0.18);
+    text-decoration: none;
+}
+
+#footer #footermiddle li a:hover {
+    color:white;
+    border: 1px solid grey;
+    background-color: grey;
+    text-decoration: none;
+}
+
+#topbarleft {
+    background: url("images/logo.jpg");
+    height: 200px;
+    width: 300px;
+    margin-left: 330px;
+    /*display: flex;
+    justify-content: space-between;*/
+}
+
+#topbarright * {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding-top: 4px;
+}
+
+#topbarright {
+    margin-right: 330px;
+}
+
+#topbarright li {
+    list-style: none;
+}
+
+#topbar h1 {
+    color: #ff6f00;
+    margin-top: 0px;
+    margin-left: -150px;
+}
+
+#topbar h2 {
+    color: white;
+    margin-bottom: 75px;
+    margin-left: -150px;
+}
+
+#topbar a {
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+#content {
+    margin: 0 330px;
+    display: grid;
+    grid-template-areas: "l r";
+    gap: 50px;
+}
+
+#content p {
+    line-height: 1.7;
+}
+
+#contentleft {
+    grid-area: l;
+    width: 500px;
+}
+
+#right_sidebar {
+    grid-area: r;
+    width: 240px;
+}
+
+#content h1, #content h2 {
+    border-bottom: 2px solid grey;
+    font-size: 35px;
+    padding: 10px 0 5px 0;
+}
+
+#contentleft blockquote {
+    padding: 30px;
+    color: #cdb55f;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+#contentleft p:nth-of-type(3n+3) {
+    padding: 10px 0 40px 0;
+}
+
+#contentleft a {
+    text-decoration: none;
+    color: orange;
+}
+
+#right_sidebar p {
+    line-height: 1.1;
+}
+
+#right_sidebar p, #right_sidebar ul {
+    margin: 0 0 10px 0;
+}
+
+#Visit li, #Articles li, #Archives li {
+    border-bottom: 2px solid grey;
+    padding: 5px 0 5px 0;
+}
+
+#Visit a, #Articles a, #Archives a {
+    text-decoration: none;
+    color: #a63f07;
+    font-weight: bold;
+}
+
+.small {
+    color: darkred;
+    font-weight: bolder;
+    padding: 0 0 10px 0;
+}
+
+#right_sidebar li {
+    list-style: none;
+}
+
+#footerbg {
+    border-top: 5px solid darkorange;
+}
+
+#footer {
+    display: grid;
+    grid-template-areas: "l m r";
+    margin-left: 330px;
+    margin-right: 300px;
+}
+
+#footerleft {
+    grid-area: l;
+    width: 250px;
+}
+
+#footermiddle {
+    grid-area: m;
+    width: 250px;
+}
+
+#footerright {
+    grid-area: r;
+    width: 250px;
+}
+
+#footer h2 {
+    color: white;
+    font-weight: bolder;
+    padding: 5px 0 20px 0;
+}
+
+#footer ul {
+    list-style: none;
+}
+
+#footer ul li {
+    border-bottom: 1px solid grey;
+    padding: 4px 0 4px 0;
+}
+
+#footer a, #credits a {
+    text-decoration: none;
+}
+
+#footer a {
+    color: grey;
+}
+
+#footer ul li:first-of-type {
+    border-top: 1px solid grey;
+}
+
+#footerbg, #credits {
+    background-color: black;
+}
+
+#credits {
+    padding: 50px 0 20px 0;
+}
+
+#credits p a {
+    color: darkorange;
+}
+
+#credits p {
+    color: white;
+}

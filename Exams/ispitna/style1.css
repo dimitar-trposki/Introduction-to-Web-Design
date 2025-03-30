@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Bahnschrift, sans-serif;
+}
+
+p {
+    color: rgba(112, 112, 112, 0.84);
+    line-height: 1.5;
+}
+
+body {
+    width: 1500px;
+    margin: auto;
+}
+
+#header-wrapper {
+    background: url("header-bg.png");
+}
+
+#wrapper {
+    background: url("main-bg.png");
+}
+
+#featured-wrapper {
+    background: url("featured-bg.png");
+}
+
+#copyright {
+    background: url("main-bg.png");
+}
+
+header a {
+    text-decoration: none;
+}
+
+#menu li {
+    list-style: none;
+}
+
+#copyright .row {
+    text-align: center;
+}
+
+#copyright a {
+    color: gray;
+}
+
+header li {
+    display: inline-block;
+}
+
+header * {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px 10px;
+    gap: 7px;
+}
+
+#header li:first-child a {
+    background: url("featured-bg.png") no-repeat;
+    color: white;
+}
+
+#header li a:hover {
+    color: deepskyblue;
+}
+
+#logo {
+    margin-right: 250px;
+    text-transform: uppercase;
+}
+
+#banner h2 {
+    color: #383535;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+a:not(#copyright a) {
+    text-decoration: none;
+}
+
+h2:not(#banner h2), h3 {
+    color: #939393;
+}
+
+a {
+    color: inherit;
+}
+
+/*#banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    gap: 20px;
+}*/
+
+#banner {
+    height: 380px;
+}
+
+#banner section {
+    float: left;
+    width: 50%;
+    padding-left: 230px;
+    padding-top: 70px;
+    padding-right: 50px;
+}
+
+#banner img {
+    height: 380px;
+    padding-left: 70px;
+    padding-right: 100px;
+}
+
+#banner h2 {
+    padding-bottom: 15px;
+}
+
+#banner p {
+    padding-bottom: 30px;
+}
+
+.button {
+    border: 1px solid deepskyblue;
+    border-radius: 5px;
+    padding: 10px;
+    background: deepskyblue;
+    color: white;
+    font-size: 14px;
+}
+
+/*featured-wrapper {
+    height: 247px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#featured-wrapper .u {
+    display: inline-block;
+    width: 33%;
+    clear: both;
+    padding-left: 230px;
+    padding-right: 100px;
+}
+
+#featured-wrapper div section {
+    width: 100%;
+}*/
+
+#featured-wrapper {
+    height: 230px;
+}
+
+#featured-wrapper div {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 200px);
+    grid-auto-rows: 247px;
+    column-gap: 179px;
+    padding-left: 77px;
+}
+
+#featured-wrapper div section h2, #featured-wrapper div section p, #featured-wrapper div section a {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 260px;
+}
+
+#featured-wrapper div section h2 {
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+
+#featured-wrapper .u section .button {
+    margin-top: -18px;
+    margin-left: 110px;
+}
+
+#featured-wrapper .u:nth-child(1) section p {
+    background: url("featured-icon01.png") no-repeat;
+    padding-left: 110px;
+    padding-top: 8px;
+    font-size: 12px;
+    padding-bottom: 30px;
+}
+
+#featured-wrapper .u:nth-child(2) section p {
+    background: url("featured-icon02.png") no-repeat;
+    padding-left: 110px;
+    padding-top: 8px;
+    font-size: 13px;
+    padding-bottom: 30px;
+}
+
+#featured-wrapper .u:nth-child(3) section p {
+    background: url("featured-icon03.png") no-repeat;
+    padding-left: 110px;
+    padding-top: 8px;
+    font-size: 13px;
+    padding-bottom: 30px;
+}
+
+#content {
+    float: left;
+    padding-left: 230px;
+}
+
+#wrapper #page #content section .main-title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#wrapper #page #content section a + p {
+    background: url("pic02.jpg") no-repeat;
+    width: 690px;
+    padding-top: 208px;
+    padding-bottom: 30px;
+}
+
+#wrapper #page #content section a + p a {
+    text-decoration: underline;
+    color: grey;
+}
+
+#wrapper #page #content section{
+    border-bottom: 2px solid rgba(77, 77, 77, 0.47);
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+

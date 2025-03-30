@@ -1,0 +1,119 @@
+/*-------------------------------------------------------------------------
+
+221033, Dimitar Trposki
+
+----------------------------------------------------------------------------*/
+* {
+    box-sizing: border-box;
+    font-family: "Times New Roman", sans-serif;
+}
+
+#pageHeader h1, #preamble h3, #explanation h3, #participation h3, #linkList h3 {
+    display: none;
+}
+
+#container {
+    width: 663px;
+    margin: auto;
+    background: url("containerbackground.gif") repeat-y;
+}
+
+#pageHeader {
+    background: url("top.gif") no-repeat;
+    height: 332px;
+    margin-left: 29px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#quickSummary {
+    float: right;
+    max-width: 192px;
+    background: url("summary.gif") no-repeat;
+    margin-right: 2.25rem;
+    padding-top: 2.6rem;
+    padding-left: 0.8rem;
+    padding-right: 0.6rem;
+}
+
+#preamble {
+    background: url("title1.gif") no-repeat;
+    margin-left: 2.3rem;
+    width: 389px;
+    padding-top: 2.6rem;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+}
+
+#explanation {
+    background: url("title2.gif") no-repeat;
+    margin-left: 2.3rem;
+    width: 389px;
+    padding-top: 2.6rem;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+}
+
+#participation {
+    background: url("title3.gif") no-repeat;
+    margin-left: 2.3rem;
+    width: 389px;
+    padding-top: 2.6rem;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+    margin-right: 0;
+}
+
+.p1 {
+    /*margin-left: 0.4rem;*/
+    max-width: 382px;
+}
+
+#linkList {
+    float: right;
+    margin-top: -51.5rem;
+}
+
+#lselect li {
+    list-style-image: url("paperfolded.gif");
+}
+
+#lresources li, #lresources li:hover {
+    list-style-image: url("paper.gif");
+    cursor: pointer;
+}
+
+#lselect {
+    max-width: 192px;
+    background: url("designs.gif") no-repeat;
+    margin-right: 2.25rem;
+    padding-top: 2.6rem;
+    padding-left: -10rem;
+    padding-right: 0;
+}
+
+#lresources {
+    max-width: 192px;
+    background: url("designs.gif") no-repeat;
+    margin-right: 2.25rem;
+    padding-top: 2.6rem;
+    padding-left: -10rem;
+    padding-right: 0;
+}
+
+li a {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+#extraDiv1::after {
+    float: right;
+    content: "Animation?";
+    display: inline-block;
+    margin-top: -85.6rem;
+    margin-right: 20.8rem;
+}

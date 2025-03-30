@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    width: 1080px;
+    font-family: Abel, sans-serif;
+    line-height: 1.8;
+}
+
+img {
+    display: block;
+}
+
+h1, h2, h3 {
+    font-family: satisfy, cursive;
+}
+
+.button-style {
+    font-family: Oswald, sans-serif;
+    background: url("../images/img01.png") no-repeat;
+    width: 100px;
+    text-align: center;
+    border: 2px solid rgba(166, 133, 90, 0.76);
+    border-radius: 5px;
+    padding: 4px 3px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.button-style a {
+    text-decoration: none;
+    color: rgba(86, 70, 51, 0.87);;
+}
+
+#header {
+    background: url("../images/img05.png") repeat-x;
+    height: 157px;
+}
+
+#header a {
+    text-decoration: none;
+}
+
+#header * {
+    padding-top: 7px;
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+#logo {
+    text-transform: lowercase;
+}
+
+#logo a {
+    color: #564633;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+#navigation {
+    padding-left: 90px;
+    text-transform: uppercase;
+    font-family: Oswald, sans-serif;
+}
+
+#navigation a {
+    color: rgba(155, 113, 51, 0.76);
+}
+
+#navigation ul li + a {
+    color: rgba(129, 96, 44, 0.86);
+}
+
+#navigation a:hover {
+    color: rgba(129, 96, 44, 0.86);
+}
+
+#fbox1 h2, #fbox2 h2, #fbox3 h2 {
+    color: rgba(155, 113, 51, 0.76);
+}
+
+#fbox1 h2 span, #fbox2 h2 span, #fbox3 h2 span {
+    color: black;
+}
+
+#fbox1 {
+    font-size: 15px;
+}
+
+#fbox1 p:nth-of-type(3) {
+    visibility: hidden;
+}
+
+#fbox1 ul {
+    list-style: none;
+}
+
+#fbox1 li {
+    padding-bottom: 2px;
+    padding-top: 9px;
+}
+
+#fbox1 li:last-of-type {
+    padding-bottom: 0;
+}
+
+#fbox1 .style2 li a, #fbox3 .style1 li a {
+    color: #564633;
+}
+
+#fbox1 li:nth-of-type(n+2) {
+    border-top: 2px dashed lightgray;
+}
+
+#fbox2 {
+    font-size: 15px;
+}
+
+#fbox2 p:nth-of-type(2) {
+    background: url("../images/img05.jpg") no-repeat;
+    padding-top: 155px;
+    padding-bottom: 30px;
+}
+
+#fbox3 li:nth-of-type(n+3) {
+    border-top: 2px dashed lightgray;
+}
+
+.style1 li p a {
+    text-decoration: none;
+}
+
+.style1 li {
+    padding-bottom: 15px;
+}
+
+.style1 li:nth-of-type(n+3) {
+    padding-top: 15px;
+}
+
+#fbox3 .style1 li:first-of-type {
+    display: none;
+}
+
+#fbox3 ul {
+    list-style: none;
+}
+
+#fbox3 h1 {
+    display: none;
+}
+
+#content div:first-of-type {
+    display: none;
+}
+
+#footer-wrapper {
+    padding-bottom: 40px;
+}
+
+#page-wrapper {
+    background-color: beige;
+    padding-bottom: 40px;
+    padding-right: 50px;
+}
+
+.style3 li p:nth-of-type(1) {
+    font-size: 15px;
+}
+
+.style3 li p:nth-of-type(2) {
+    padding-top: 6px;
+    font-size: 13px;
+}
+
+#page {
+    display: grid;
+    grid-template-areas: "l r r";
+    gap: 30px;
+    padding-top: 40px;
+    padding-left: 80px;
+}
+
+#sidebar ul {
+    list-style: none;
+}
+
+#content {
+    grid-area: r;
+}
+
+#sidebar {
+    grid-area: l;
+    max-width: 290px;
+}
+
+#page h2 {
+    padding-bottom: 23px;
+}
+
+#content p:not(.button-style) a {
+    color: #564633;
+    font-weight: bolder;
+}
+
+#content div:nth-of-type(2) p:nth-of-type(3) {
+    padding-bottom: 20px;
+}
+
+.style3 li:nth-of-type(1) {
+    background: url("../images/img02.jpg") no-repeat;
+    padding-left: 85px;
+    padding-bottom: 40px;
+}
+
+.style3 li:nth-of-type(2) {
+    background: url("../images/img03.jpg") no-repeat;
+    padding-left: 85px;
+    padding-bottom: 40px;
+}
+
+.style3 li:nth-of-type(3) {
+    background: url("../images/img04.jpg") no-repeat;
+    padding-left: 85px;
+}
+
+#footer p:first-child {
+    visibility: hidden;
+}
+
+#footer {
+    background: url("../images/img01.png") repeat-x;
+    height: 100px;
+    text-align: center;
+    padding-top: 20px;
+    color: #564633;
+    text-transform: uppercase;
+}
+
+#footer p a {
+    color: #564633;
+}
+
+#footer-content {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+    padding-top: 40px;
+    padding-left: 75px;
+    padding-right: 50px;
+}
+
+#footer-content h2 {
+    padding-bottom: 40px;
+}
+
+li a:hover {
+    text-decoration: none;
+}
+
+.style3 li:hover {
+    border: 2px dashed black;
+}

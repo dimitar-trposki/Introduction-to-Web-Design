@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    background-color: #7ddf96;
+    font-family: Arial;
+}
+
+nav {
+    margin-top: 16px;
+    margin-right: 80px;
+    margin-left: 86px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 11px 16px 11px 16px;
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+    color: #505978;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+    background-color: #505978;
+    border-radius: 3px;
+}
+
+nav a:nth-child(2n) {
+    color: white;
+    background-color: #505978;
+    border-radius: 3px;
+}
+
+#navBar {
+    background-color: white;
+    margin: 0;
+    padding-bottom: 21px;
+    padding-top: 11px;
+}
+
+#title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#page {
+    color: #7ddf96;
+}
+
+#container {
+    background-color: #7ddf96;
+    margin: 0;
+}
+
+#title1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+#form {
+    margin: 30px;
+    background-color: #f2f2f2;
+    border-radius: 6px;
+}
+
+#all {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#leftColumn, #rightColumn {
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+#CV {
+    margin-top: 15px;
+}
+
+.textarea {
+    width: 626px;
+    height: 30px;
+}
+
+#subject {
+    width: 625px;
+    height: 173px;
+    font-family: Arial;
+}
+
+#middle {
+    text-align: center;
+}
+
+#submit {
+    color: white;
+    background-color: #04aa6d;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: #04aa6d;
+    width: 500px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}

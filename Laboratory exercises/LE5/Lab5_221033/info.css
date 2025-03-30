@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    background-color: #7ddf96;
+    font-family: Arial;
+}
+
+nav {
+    margin-top: 16px;
+    margin-right: 66px;
+    margin-left: 86px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 11px 16px 11px 16px;
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+    color: #505978;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+    background-color: #505978;
+    border-radius: 3px;
+}
+
+nav a:last-child {
+    color: white;
+    background-color: #505978;
+    border-radius: 3px;
+}
+
+#navBar {
+    background-color: white;
+    margin: 0;
+    padding-bottom: 21px;
+    padding-top: 11px;
+}
+
+#title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#page {
+    color: #7ddf96;
+}
+
+#info {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#Wiki {
+    background-color: #f2f2f2;
+    margin-right: 35px;
+    margin-left: 35px;
+    border-color: #f2f2f2;
+    border-radius: 3px;
+}
+
+#Wiki1 {
+    margin: 20px;
+    width: 1400px;
+    height: 650px;
+}
+
+#map {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+iframe:last-child {
+    border: 0;
+}
